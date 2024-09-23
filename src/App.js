@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {Route,Switch } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import TaskForm from './components/TaskForm'
+import Home from './components/Home'
+import "./App.css"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => (
+    <div>
+      <Navbar/>
+      <hr className='hor-line'/>
+      <Switch>
+        <Route exact path="/" component={Home}/>
+        <Route exact path="/createTask" component={TaskForm}/>
+      </Switch>
     </div>
-  );
-}
+  )
 
-export default App;
+
+export default App

@@ -1,0 +1,25 @@
+.navbar{
+    width: 90%;
+    height: 9vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.nav-icon{
+    font-size: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.navbar-heading{
+    font-size: 25px;
+}
+.nav-link{
+    outline: none;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
